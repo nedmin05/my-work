@@ -1,30 +1,51 @@
 <head>
-<title>my projects</title>
-<link rel="stylesheet" href="style.css">
+    <title>my projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-<section id="app">
-<h1> Apps</h1>
-<div class="line"></div>
-<iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/miGTPWBuQCUgoKx01nmGG5WQUJiNEFKS4Z91bwxHM-0/embed"></iframe>
-<iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/e3OzcsuXZBVT2Coz0zXVy7hijHS1aTRb09qIntzF1yg/embed"></iframe>
-</section>
-<section id="game">
-<h1>games</h1>    
-<div class="line"></div>
-<a href="https://studio.code.org/projects/playlab/va1AYXeVerzOz-QtJwja9yRMMZZobDdTy5aBr2EuJ84" target="_blank"><img src="thumbnail.png">
-</a>
-<a href="https://studio.code.org/projects/playlab/nFEaL1Zmko6FUah4w5FWwggYVe1yvl2UN2xE6uTU5_g"
-target="_blank"><img src="thumbnail%20(1).png"></a>
-</section>
-<section id="chatbot">
-<h1>chatbot</h1>
-<div class="line"></div>
-<iframe
-    allow="microphone;"
-    width="350"
-    height="430"
-    src="https://console.dialogflow.com/api-client/demo/embedded/4675c354-d33a-46e5-a1b1-947fbe686686">
-</iframe>
-</section>
+    <div class="container">
+        <section id="app">
+            <h1> Apps</h1>
+            <div class="line"></div>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/miGTPWBuQCUgoKx01nmGG5WQUJiNEFKS4Z91bwxHM-0/embed"></iframe>
+            <iframe width="400" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/e3OzcsuXZBVT2Coz0zXVy7hijHS1aTRb09qIntzF1yg/embed"></iframe>
+        </section>
+        <h2> click on games to explore</h2>
+        <h5>click on games to play</h5>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <center>
+                        <a href="https://studio.code.org/projects/playlab/va1AYXeVerzOz-QtJwja9yRMMZZobDdTy5aBr2EuJ84" target="_blank"><img src="thumbnail.png" class="img-responsive">
+                        </a>
+                        <div class="carousel-content">
+                            <p>dragon game</p>
+                        </div>
+                    </center>
+                </div>
+                <div class="item">
+                <center>
+                <a href="https://studio.code.org/projects/playlab/nFEaL1Zmko6FUah4w5FWwggYVe1yvl2UN2xE6uTU5_g" target="_blank"><img src="thumbnail%20(1).png" class="img-responsive"></a>
+                <div class="carousel-content"><p>fight agaisnt corona</p></div>
+                </center>
+                </div>
+            </div>
+            <a class="left carousel-control"href="#myCarousel" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control"href="#myCarousel" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <section id="chatbot">
+            <h1>chatbot</h1>
+            <div class="line"></div>
+            <iframe allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/4675c354-d33a-46e5-a1b1-947fbe686686">
+            </iframe>
+        </section>
+    </div>
 </body>
